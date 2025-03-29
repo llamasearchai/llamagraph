@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+  llamagraph:
+    build: .
+    container_name: llamagraph
+    volumes:
+      - ./data:/app/data
+    stdin_open: true
+    tty: true 
